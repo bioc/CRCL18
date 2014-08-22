@@ -1,0 +1,56 @@
+%\VignetteIndexEntry{CRCL18}
+%\VignetteKeywords{ExperimentData}
+%\VignetteDepends{CRCL18}
+%\VignettePackage{CRCL18}
+\documentclass[a4paper]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{Sweave}
+
+\begin{document}
+
+\title{CRC line line 18 dataset}
+
+\author{Claudio Isella, Laura Cantini, Simone Chiola and Enzo Medico}
+
+\maketitle
+
+\vspace{12pt}
+
+\section{Introduction}
+The package contain data objects of miRNA and mRNA profile
+of 18 colorectal cancer cell line classfied according to 
+CRC-Assigner \cite{Sadanandam}.
+The \emph{ExpressionSet} include samples information (phenoData) and probe (genes) information.
+Data were respectivelly for mRNA and miRNA with Illumina BeadChip and Illumina smallTruSeq method.
+
+
+<<Library, results=hide>>=
+library(CRCL18)
+@
+
+\section{Introduction}
+both the \emph{ExpressionSet} can be loaded as it follows
+
+<<Library>>=
+data(CRCLmrna)
+data(CRCLmirna)
+@
+
+
+
+\section{References}
+\addcontentsline{toc}{chapter}{References}
+\begin{thebibliography}
+\scriptsize{
+
+\bibitem{TCGA}       Network, C.G.A.
+                        \emph{Network, C.G.A. Comprehensive molecular characterization of human colon and rectal cancer}
+                        Nature 487, 330-7 (2012).
+}
+\end{thebibliography}
+\end{document}
+
+
+
